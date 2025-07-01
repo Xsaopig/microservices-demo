@@ -49,7 +49,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/emailservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/emailservice:main
         ports:
         - containerPort: 8080
         env:
@@ -123,7 +123,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: registry.cn-hangzhou.aliyuncs.com/xsaopig/checkoutservice:main
+          image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/checkoutservice:main
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -206,7 +206,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/recommendationservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/recommendationservice:main
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -284,7 +284,7 @@ spec:
                 - ALL
             privileged: false
             readOnlyRootFilesystem: true
-          image: registry.cn-hangzhou.aliyuncs.com/xsaopig/frontend:main
+          image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/frontend:main
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -411,7 +411,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/paymentservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/paymentservice:main
         ports:
         - containerPort: 50051
         env:
@@ -484,7 +484,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/productcatalogservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/productcatalogservice:main
         ports:
         - containerPort: 3550
         env:
@@ -557,7 +557,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/cartservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/cartservice:main
         ports:
         - containerPort: 7070
         env:
@@ -629,7 +629,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/redis:alpine
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/redis:alpine
         ports:
         - containerPort: 6379
         readinessProbe:
@@ -722,7 +722,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/busybox:latest
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/busybox:latest
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -735,7 +735,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/loadgenerator:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/loadgenerator:main
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -787,7 +787,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/currencyservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/currencyservice:main
         ports:
         - name: grpc
           containerPort: 7000
@@ -860,7 +860,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/shippingservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/shippingservice:main
         ports:
         - containerPort: 50051
         env:
@@ -934,7 +934,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: registry.cn-hangzhou.aliyuncs.com/xsaopig/adservice:main
+        image: registry.cn-hangzhou.aliyuncs.com/xsaopig_onlineboutique/adservice:main
         ports:
         - containerPort: 9555
         env:
